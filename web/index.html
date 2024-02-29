@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" href="./src/assets/72.png" /> -->
+  <link rel="icon" href="<%= BASE_URL %>xxx.ico">
+  <!-- <link rel="icon"
+    href="https://img0.baidu.com/it/u=3544561646,456831003&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800" /> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes"><!-- 控制是否添加到桌面的关键，yes为开启导航栏，no为关闭 -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+  <meta name="description"
+    content="Bem-vindo ao casino. O lugar onde foram criados Crash, Duplo, Minas e outros jogos. Inscreva-se para receber bônus em tempo real, cashback e roda grátis." />
+  <meta data-n-head="ssr" data-hid="og:image" name="og:image" property="og:image"
+    content="https://d1tk19p8b2xr8r.cloudfront.net/titalbanner/bn.png">
+  <title>jogos</title>
+  <!-- <link rel="apple-touch-icon" size="72x72" href="./src/assets/72.png" />
+  <link rel="apple-touch-icon" size="144x144" href="./src/assets/144.png" />
+  <link rel="apple-touch-startup-image" href="./src/assets/512.png" /> -->
+  <link rel="apple-touch-startup-image" media="screen and (orientation: portrait)" href="./src/assets/512.png" />
+
+  <script type="application/javascript">
+    !(function (t, e, a, r, n, s, d, l, o, i, u) {
+      (t.Adjust = t.Adjust || {}), (t.Adjust_q = t.Adjust_q || []);
+      for (var c = 0; c < l.length; c++) o(t.Adjust, t.Adjust_q, l[c]);
+      (i = e.createElement(a)),
+        (u = e.getElementsByTagName(a)[0]),
+        (i.async = !0),
+        (i.src = "https://cdn.adjust.com/adjust-latest.min.js"),
+        (i.onload = function () {
+          for (var e = 0; e < t.Adjust_q.length; e++)
+            t.Adjust[t.Adjust_q[e][0]].apply(t.Adjust, t.Adjust_q[e][1]);
+          t.Adjust_q = [];
+        }),
+        u.parentNode.insertBefore(i, u);
+    })(
+      window,
+      document,
+      "script",
+      0,
+      0,
+      0,
+      0,
+      [
+        "initSdk",
+        "getAttribution",
+        "getWebUUID",
+        "setReferrer",
+        "trackEvent",
+        "addGlobalCallbackParameters",
+        "addGlobalPartnerParameters",
+        "removeGlobalCallbackParameter",
+        "removeGlobalPartnerParameter",
+        "clearGlobalCallbackParameters",
+        "clearGlobalPartnerParameters",
+        "switchToOfflineMode",
+        "switchBackToOnlineMode",
+        "stop",
+        "restart",
+        "gdprForgetMe",
+        "disableThirdPartySharing",
+        "initSmartBanner",
+        "showSmartBanner",
+        "hideSmartBanner",
+      ],
+      function (t, e, a) {
+        t[a] = function () {
+          e.push([a, arguments]);
+        };
+      }
+    );
+    Adjust.initSdk({
+      appToken: "aq5xid8gkpog",
+      environment: "production",
+    });
+  </script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    function getQueryString(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null) return unescape(r[2]);
+      return null;
+    }
+    let pixel = getQueryString("pixel");
+    if (pixel) {
+      localStorage.setItem("pixel", pixel);
+    }
+    fbq("init", localStorage.getItem("pixel"));
+    fbq("track", "PageView");
+  </script>
+  <!-- Kwai Pixel -->
+  <script>
+    !(function (e, t) {
+      "object" == typeof exports && "object" == typeof module
+        ? (module.exports = t())
+        : "function" == typeof define && define.amd
+          ? define([], t)
+          : "object" == typeof exports
+            ? (exports.install = t())
+            : (e.install = t());
+    })(window, function () {
+      return (function (e) {
+        var t = {};
+        function n(r) {
+          if (t[r]) return t[r].exports;
+          var o = (t[r] = { i: r, l: !1, exports: {} });
+          return e[r].call(o.exports, o, o.exports, n), (o.l = !0), o.exports;
+        }
+        return (
+          (n.m = e),
+          (n.c = t),
+          (n.d = function (e, t, r) {
+            n.o(e, t) ||
+              Object.defineProperty(e, t, { enumerable: !0, get: r });
+          }),
+          (n.r = function (e) {
+            "undefined" != typeof Symbol &&
+              Symbol.toStringTag &&
+              Object.defineProperty(e, Symbol.toStringTag, {
+                value: "Module",
+              }),
+              Object.defineProperty(e, "__esModule", { value: !0 });
+          }),
+          (n.t = function (e, t) {
+            if ((1 & t && (e = n(e)), 8 & t)) return e;
+            if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+            var r = Object.create(null);
+            if (
+              (n.r(r),
+                Object.defineProperty(r, "default", {
+                  enumerable: !0,
+                  value: e,
+                }),
+                2 & t && "string" != typeof e)
+            )
+              for (var o in e)
+                n.d(
+                  r,
+                  o,
+                  function (t) {
+                    return e[t];
+                  }.bind(null, o)
+                );
+            return r;
+          }),
+          (n.n = function (e) {
+            var t =
+              e && e.__esModule
+                ? function () {
+                  return e.default;
+                }
+                : function () {
+                  return e;
+                };
+            return n.d(t, "a", t), t;
+          }),
+          (n.o = function (e, t) {
+            return Object.prototype.hasOwnProperty.call(e, t);
+          }),
+          (n.p = ""),
+          n((n.s = 0))
+        );
+      })([
+        function (e, t, n) {
+          "use strict";
+          var r =
+            (this && this.__spreadArray) ||
+            function (e, t, n) {
+              if (n || 2 === arguments.length)
+                for (var r, o = 0, i = t.length; o < i; o++)
+                  (!r && o in t) ||
+                    (r || (r = Array.prototype.slice.call(t, 0, o)),
+                      (r[o] = t[o]));
+              return e.concat(r || Array.prototype.slice.call(t));
+            };
+          !(function (e) {
+            var t = window;
+            (t.KwaiAnalyticsObject = e), (t[e] = t[e] || []);
+            var n = t[e];
+            n.methods = [
+              "page",
+              "track",
+              "identify",
+              "instances",
+              "debug",
+              "on",
+              "off",
+              "once",
+              "ready",
+              "alias",
+              "group",
+              "enableCookie",
+              "disableCookie",
+            ];
+            var o = function (e, t) {
+              e[t] = function () {
+                var n = Array.from(arguments),
+                  o = r([t], n, !0);
+                e.push(o);
+              };
+            };
+            n.methods.forEach(function (e) {
+              o(n, e);
+            }),
+              (n.instance = function (e) {
+                var t = n._i[e] || [];
+                return (
+                  n.methods.forEach(function (e) {
+                    o(t, e);
+                  }),
+                  t
+                );
+              }),
+              (n.load = function (t, r) {
+                (n._i = n._i || {}),
+                  (n._i[t] = []),
+                  (n._i[t]._u =
+                    "https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js"),
+                  (n._t = n._t || {}),
+                  (n._t[t] = +new Date()),
+                  (n._o = n._o || {}),
+                  (n._o[t] = r || {});
+                var o = document.createElement("script");
+                (o.type = "text/javascript"),
+                  (o.async = !0),
+                  (o.src =
+                    "https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js?sdkid=" +
+                    t +
+                    "&lib=" +
+                    e);
+                var i = document.getElementsByTagName("script")[0];
+                i.parentNode.insertBefore(o, i);
+              });
+          })("kwaiq");
+        },
+      ]);
+    });
+  </script>
+  <script>
+    function getQueryString(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null) return unescape(r[2]);
+      return null;
+    }
+    let kwai_pixel = getQueryString("kwai_pixel");
+    if (kwai_pixel) {
+      localStorage.setItem("kwai_pixel", kwai_pixel);
+    }
+    kwaiq.load(localStorage.getItem("kwai_pixel"));
+    kwaiq.page();
+    kwaiq.instance(localStorage.getItem("kwai_pixel")).track("contentView");
+  </script>
+  <!-- 苹果端适配 -->
+
+  <script>
+    if ("standalone" in window.navigator && window.navigator.standalone) {
+      var noddy,
+        remotes = false;
+
+      document.addEventListener(
+        "click",
+        function (event) {
+          noddy = event.target;
+
+          while (noddy.nodeName !== "A" && noddy.nodeName !== "HTML")
+            noddy = noddy.parentNode;
+
+          if (
+            "href" in noddy &&
+            noddy.href.indexOf("http") !== -1 &&
+            (noddy.href.indexOf(document.location.host) !== -1 || remotes)
+          ) {
+            event.preventDefault();
+
+            document.location.href = noddy.href;
+          }
+        },
+        false
+      );
+    }
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+<!-- Start of LiveChat (www.livechat.com) code -->
+<!-- <script>
+  window.__lc = window.__lc || {};
+  window.__lc.license = 15427629;
+  ; (function (n, t, c) { function i(n) { return e._h ? e._h.apply(null, n) : e._q.push(n) } var e = { _q: [], _h: null, _v: "2.0", on: function () { i(["on", c.call(arguments)]) }, once: function () { i(["once", c.call(arguments)]) }, off: function () { i(["off", c.call(arguments)]) }, get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) }, call: function () { i(["call", c.call(arguments)]) }, init: function () { var n = t.createElement("script"); n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n) } }; !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e }(window, document, [].slice))
+</script> -->
+<!-- <noscript><a href="https://www.livechat.com/chat-with/15427629/" rel="nofollow">Chat with us</a>, powered by <a
+    href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript> -->
+<!-- End of LiveChat code -->
+
+</html>

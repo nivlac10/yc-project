@@ -1,0 +1,195 @@
+// 全局 CSS 变量
+@import "./variables.css";
+// Transition
+@import "./transition.scss";
+// Element Plus
+@import "./element-plus.scss";
+// Vxe Table
+@import "./vxe-table.scss";
+// 注册多主题
+@import "./theme/register.scss";
+// mixin
+@import "./mixins.scss";
+
+// 业务页面几乎都应该在根元素上挂载 class="app-container"，以保持页面美观
+.app-container {
+  padding: 20px;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: var(--v3-body-bg-color);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial,
+    sans-serif;
+  @include scrollbar();
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a,
+a:focus,
+a:hover {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.box-card-top {
+  .el-card__body {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.text_hiding {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+// el-tooltip
+.el-popper {
+  width: 300px;
+}
+
+
+:deep(.el-form-item) {
+  align-items: center;
+  height: 40px;
+}
+
+:deep(.el-form-item__label) {
+  justify-content: flex-start;
+}
+
+:deep(.el-card__body>.el-button+.el-button) {
+  margin: 0;
+}
+
+.center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 750px) {
+  .app-container {
+    padding: 5px;
+  }
+
+  .el-card__body {
+    padding: 5px;
+  }
+
+  .el-card {
+    display: flex;
+
+  }
+
+  .el-card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    // flex: 1;
+    position: relative;
+
+    .el-table {
+      flex: 1;
+      position: relative;
+
+    }
+
+    div {
+      // margin-bottom: 5px;
+    }
+
+    .el-button {
+      margin-top: 5px;
+    }
+
+    .el-button+.el-button {
+      margin-left: 0;
+    }
+
+    .el-range-editor.el-input__wrapper {
+      padding: 0 6px;
+
+    }
+
+    .el-date-editor .el-range-input {
+      font-size: 12px;
+    }
+  }
+
+  .el-table--scrollable-y .el-table__body-wrapper {
+    overflow-y: auto;
+  }
+
+  .el-card .el-card__body {
+    overflow-y: auto;
+  }
+
+  .el-scrollbar__view {
+    overflow: auto;
+  }
+
+  .el-table__header {
+    overflow: auto;
+
+    tr {
+      overflow: auto;
+      right: unset;
+
+      .cell {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+
+  .el-pagination .el-pagination__total,
+  .el-pagination .el-pagination__sizes,
+  .el-pagination .el-pagination__jump {
+
+    display: block !important;
+  }
+
+  .el-pagination__sizes {
+    margin-left: 5px;
+  }
+
+  .box-card-top .el-card__body {
+    display: flow-root;
+  }
+
+  .el-dialog {
+    --el-dialog-width: 98%;
+    --el-dialog-margin-top: 5vh;
+  }
+}
